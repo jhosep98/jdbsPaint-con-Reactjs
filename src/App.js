@@ -8,6 +8,8 @@ let isMouseDown;
 let cx;
 let currentTool;
 
+
+
 function relativePos(event, element) {
   let rect = element.getBoundingClientRect();
 
@@ -93,20 +95,23 @@ const setCurrentTool = toolName => {
 };
 
 function Tools() {
+    const tools = ["line","eraser","text","spray"];
+    const toolsOption = tools.map((tools)=> <option key={tools.toString()}>{tools}</option>)
   return (
     <span>
       tools:
       <select onChange={event => setCurrentTool(event.target.value)}>
-        <option>line</option>
-        <option>eraser</option>
-        <option>text</option>
-        <option>spray</option>
+        {toolsOption}
       </select>
     </span>
   );
 }
 
-function Size(_props) {
+
+function Size() {
+  const numbers = [1, 2, 3, 5, 8, 12, 25, 35, 50, 75, 100];
+  const listOption = numbers.map((n) => <option key={n.toString()}>{n}</option>);
+  
   return (
     <span>
       Font Size:
@@ -115,21 +120,14 @@ function Size(_props) {
           cx.lineWidth = event.target.value;
         }}
       >
-        <option>1</option>
-        <option>2</option>
-        <option>3</option>
-        <option>5</option>
-        <option>8</option>
-        <option>12</option>
-        <option>25</option>
-        <option>35</option>
-        <option>50</option>
-        <option>75</option>
-        <option>100</option>
-      </select>
+      {listOption}
+      </select> 
     </span>
   );
+
 }
+
+
 
 function Color(_props) {
   return (
@@ -209,11 +207,11 @@ function Save() {
   return (
     <button
       onClick={event => {
-        event.preventDefault()
+        event.preventDefault();
         const element = document.createElement("a");
 
         element.setAttribute("href", cx.canvas.toDataURL());
-        element.setAttribute("download", 'asdf.jpg');
+        element.setAttribute("download", "asdf.jpg");
         element.style.display = "none";
         document.body.appendChild(element);
 
@@ -227,36 +225,40 @@ function Save() {
   );
 }
 
+
 function App(_props) {
   return (
     <div>
-      <div className="picture-panel">
-        <canvas
-          height= "500"
-          width= "800"
-          className="canvas"
-          onMouseDown={ev => {
-            isMouseDown = true;
-            currentTool.onMouseDown && currentTool.onMouseDown(ev);
-          }}
-          onMouseUp={ev => {
-            isMouseDown = false;
-            currentTool.onMouseUp && currentTool.onMouseUp(ev);
-          }}
-          ref={node => {
-            canvas = node;
-            cx = canvas.getContext("2d");
-            cx.fillStyle = "white";
-            cx.fillRect(0, 0, canvas.width, canvas.height);
-            cx.fillStyle = "black";
-            setCurrentTool("line");
-          }}
-          onMouseMove={ev => {
-            lastPos = currentPos;
-            currentPos = relativePos(ev, cx.canvas);
-            currentTool.onMouseMove && currentTool.onMouseMove(ev);
-          }}
-        />
+      <div>
+       <h1 className="title">Welcome!</h1>
+        <div className="picture-panel">
+          <canvas
+            height="500"
+            width="800"
+            className="canvas"
+            onMouseDown={ev => {
+              isMouseDown = true;
+              currentTool.onMouseDown && currentTool.onMouseDown(ev);
+            }}
+            onMouseUp={ev => {
+              isMouseDown = false;
+              currentTool.onMouseUp && currentTool.onMouseUp(ev);
+            }}
+            ref={node => {
+              canvas = node;
+              cx = canvas.getContext("2d");
+              cx.fillStyle = "white";
+              cx.fillRect(0, 0, canvas.width, canvas.height);
+              cx.fillStyle = "black";
+              setCurrentTool("line");
+            }}
+            onMouseMove={ev => {
+              lastPos = currentPos;
+              currentPos = relativePos(ev, cx.canvas);
+              currentTool.onMouseMove && currentTool.onMouseMove(ev);
+            }}
+          />
+        </div>
       </div>
       <div className="flex-container">
         <div>
