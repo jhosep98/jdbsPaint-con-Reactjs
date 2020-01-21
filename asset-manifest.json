@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/jdbsPaint-con-Reactjs/static/css/main.ac977b26.chunk.css",
-    "main.js": "/jdbsPaint-con-Reactjs/static/js/main.abbe475d.chunk.js",
-    "main.js.map": "/jdbsPaint-con-Reactjs/static/js/main.abbe475d.chunk.js.map",
+    "main.css": "/jdbsPaint-con-Reactjs/static/css/main.53c706dc.chunk.css",
+    "main.js": "/jdbsPaint-con-Reactjs/static/js/main.34adb125.chunk.js",
+    "main.js.map": "/jdbsPaint-con-Reactjs/static/js/main.34adb125.chunk.js.map",
     "runtime~main.js": "/jdbsPaint-con-Reactjs/static/js/runtime~main.baed0a65.js",
     "runtime~main.js.map": "/jdbsPaint-con-Reactjs/static/js/runtime~main.baed0a65.js.map",
     "static/js/2.6c69e3cb.chunk.js": "/jdbsPaint-con-Reactjs/static/js/2.6c69e3cb.chunk.js",
     "static/js/2.6c69e3cb.chunk.js.map": "/jdbsPaint-con-Reactjs/static/js/2.6c69e3cb.chunk.js.map",
     "index.html": "/jdbsPaint-con-Reactjs/index.html",
-    "precache-manifest.7732b6918b15bd13d8d65c89c39b8df1.js": "/jdbsPaint-con-Reactjs/precache-manifest.7732b6918b15bd13d8d65c89c39b8df1.js",
+    "precache-manifest.127d8e13efa56507605a5469770cdf3a.js": "/jdbsPaint-con-Reactjs/precache-manifest.127d8e13efa56507605a5469770cdf3a.js",
     "service-worker.js": "/jdbsPaint-con-Reactjs/service-worker.js",
-    "static/css/main.ac977b26.chunk.css.map": "/jdbsPaint-con-Reactjs/static/css/main.ac977b26.chunk.css.map"
+    "static/css/main.53c706dc.chunk.css.map": "/jdbsPaint-con-Reactjs/static/css/main.53c706dc.chunk.css.map"
   }
 }
