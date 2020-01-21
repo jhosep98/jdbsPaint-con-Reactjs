@@ -8,8 +8,6 @@ let isMouseDown;
 let cx;
 let currentTool;
 
-
-
 function relativePos(event, element) {
   let rect = element.getBoundingClientRect();
 

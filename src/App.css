@@ -10,6 +10,10 @@ body {
   padding: 5%;
 }
 
+canvas {
+  background-color: white;
+}
+
 .flex-container {
   display: flex;
   flex-wrap: wrap;
