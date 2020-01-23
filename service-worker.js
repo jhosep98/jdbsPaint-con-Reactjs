@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/jdbsPaint-con-Reactjs/precache-manifest.127d8e13efa56507605a5469770cdf3a.js"
+  "/jdbsPaint-con-Reactjs/precache-manifest.3ca14f9c44b94103db3c797877142ad0.js"
 );
 
 self.addEventListener('message', (event) => {
