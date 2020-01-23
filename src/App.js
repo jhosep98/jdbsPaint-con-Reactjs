@@ -1,6 +1,8 @@
 import React from "react";
 import "./App.css";
 
+import gitHub from './github.png'
+
 let canvas;
 let currentPos;
 let lastPos;
@@ -276,6 +278,9 @@ function App(_props) {
         </div>
         <div>
           <Save />
+        </div>
+        <div>
+            Codigo fuente: <a href='https://github.com/jhosep98/jdbsPaint-con-Reactjs' target='blank'><img src={gitHub} style={{width:40 ,height:40 }}/></a>
         </div>
       </div>
     </div>
