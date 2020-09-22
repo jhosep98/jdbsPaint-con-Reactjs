@@ -1,5 +1,5 @@
 # Drawing-board
-This is an interactive board where you can draw.🖋🖌
+This is an interactive board where you can draw.🖌
 
 ## Table of contents
 
@@ -9,7 +9,7 @@ This is an interactive board where you can draw.🖋🖌
 - [Contact](#contact)
 
 ## General info
-This is an interactive board where you can draw. It has several tools and settings.📝🖋🖌
+This is an interactive board where you can draw. It has several tools and settings.
 
 ## Screenshots
 
