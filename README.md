@@ -13,7 +13,7 @@ This is an interactive board where you can draw. It has several tools and settin
 
 ## Screenshots
 
-![jdbPaint screenshot](./img/formCss.png)
+![jdbPaint screenshot](./Board.png)
 
 ## Technologies
 
